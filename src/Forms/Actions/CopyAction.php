@@ -14,7 +14,7 @@ class CopyAction extends BaseAction
     public function getCopyable(): ?string
     {
         if ($this->copyable === null) {
-            return $this->evaluate(fn ($component) => '$wire.'.$this->changeFromDottedToBracket($component->getStatePath()));
+            return $this->evaluate(fn ($component) => '$wire'.$this->changeFromDottedToBracket($component->getStatePath()));
         }
 
         return parent::getDefaultCopyable();
