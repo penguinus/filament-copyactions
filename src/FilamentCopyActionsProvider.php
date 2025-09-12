@@ -10,7 +10,6 @@ class FilamentCopyActionsProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('filament-copyactions')
-            ->hasViews();
+            ->name('filament-copyactions');
     }
 }
